@@ -1,7 +1,4 @@
 <h2>Shelter</h2>
-<ul>
-  <li><a href="/shelters">Shelter 1</a></li>
-  <li><a href="/shelters">Shelter 2</a></li>
-  <li><a href="/shelters">Shelter 3</a></li>
-  <li><a href="/shelters">Shelter 4</a></li>
-</ul>
+<% @shelters.each do |shelter| %>
+  <h2><%= shelter.name %></h2>
+<% end %>
