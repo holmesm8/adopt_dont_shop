@@ -17,11 +17,11 @@ class SheltersController < ApplicationController
     shelter.save
     redirect_to '/shelters'
   end
-  # 
-  # def show
-  #   @shelter = Shelter.find(params[:id])
-  # end
-  #
+
+  def show
+    @shelter = Shelter.find(params[:id])
+  end
+
   # def edit
   #   @shelter = Shelter.find(params[:id])
   # end

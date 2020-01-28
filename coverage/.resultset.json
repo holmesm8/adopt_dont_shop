@@ -183,6 +183,7 @@
         null,
         1,
         1,
+        1,
         null
       ],
       "/Users/mattholmes/turing/2module/projects/adopt_dont_shop/app/helpers/application_helper.rb": [
@@ -204,17 +205,12 @@
         1,
         null
       ],
-      "/Users/mattholmes/turing/2module/projects/adopt_dont_shop/spec/features/shelters/user_can_see_all_shelters_spec.rb": [
+      "/Users/mattholmes/turing/2module/projects/adopt_dont_shop/spec/features/shelters/shelters_index_spec.rb": [
         1,
         null,
         1,
         1,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
         null,
         null,
@@ -223,8 +219,36 @@
         null,
         1,
         null,
+        null,
+        null,
+        null,
+        null,
         1,
         null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/mattholmes/turing/2module/projects/adopt_dont_shop/spec/features/shelters/shelters_show_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
         1,
         null,
         null,
@@ -278,8 +302,8 @@
         0,
         null,
         null,
-        null,
-        null,
+        1,
+        1,
         null,
         null,
         null,
@@ -306,6 +330,6 @@
         null
       ]
     },
-    "timestamp": 1580250741
+    "timestamp": 1580254585
   }
 }

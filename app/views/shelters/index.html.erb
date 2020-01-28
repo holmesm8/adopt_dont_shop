@@ -1,4 +1,4 @@
-<h2>Shelter</h2>
+<h2>Shelter Index</h2>
 <% @shelters.each do |shelter| %>
-  <h2><%= shelter.name %></h2>
+  <h3><a href="/shelters/<%= shelter.id %>"><%= shelter.name %></h3>
 <% end %>
