@@ -45,6 +45,7 @@ RSpec.describe "shelters index page", type: :feature do
 
       click_on "Create Shelter"
 
+      expect(current_path).to eq("/shelters")
       expect(page).to have_content("Matts DoggyDayCare")
     end
   end

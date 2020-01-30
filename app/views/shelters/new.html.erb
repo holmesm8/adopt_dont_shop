@@ -1,6 +1,6 @@
 <h1>Create New Shelter</h1>
 
-<%=form_tag(url: "/shelters", method: :post) do %>
+<%=form_tag "/shelters" do %>
   <br><%= label_tag :name %>
   <br><%= text_field_tag :name %>
   <br><%= label_tag :address %>
