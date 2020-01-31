@@ -1,4 +1,10 @@
 <h2>Pets Index</h2>
+<% if @shelter %>
+  <h3><%= "#{@shelter.name}'s Pets" %></h3>
+  <p><%= @shelter.id %></p>
+<% else %>
+  <h3>Pets</h3>
+<% end %>
 
 <% @pets.each do |pet| %>
   <p>Doggy Name: <%= pet.name %></p>
@@ -8,5 +14,4 @@
   <p>Shelter: <%= pet.shelter.name %></p>
   <br>
   <br>
-
 <% end %>
