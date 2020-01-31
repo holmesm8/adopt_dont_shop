@@ -1,4 +1,5 @@
 <h2>Pets Index</h2>
+
 <% @pets.each do |pet| %>
   <p>Doggy Name: <%= pet.name %></p>
   <img src="<%= pet.image %>"<br>
@@ -7,4 +8,5 @@
   <p>Shelter: <%= pet.shelter.name %></p>
   <br>
   <br>
+
 <% end %>
