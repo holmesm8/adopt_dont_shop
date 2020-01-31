@@ -44,7 +44,7 @@ RSpec.describe "shelters index page", type: :feature do
       fill_in 'Zip', with: '80205'
 
       click_on "Create Shelter"
-  # <% submit_tag(value="Create Shelter") %>
+
       expect(current_path).to eq("/shelters")
       expect(page).to have_content("Matts DoggyDayCare")
     end
