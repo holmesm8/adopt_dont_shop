@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-02-01T14:29:06-07:00">2020-02-01T14:29:06-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-02-01T14:59:21-07:00">2020-02-01T14:59:21-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.11
+         1.12
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>30</b> files in total.
-    <b>272</b> relevant lines. 
-    <span class="green"><b>272</b> lines covered</span> and
+    <b>280</b> relevant lines. 
+    <span class="green"><b>280</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -77,7 +77,7 @@
         <td>20</td>
         <td>20</td>
         <td>0</td>
-        <td>1.7</td>
+        <td>1.9</td>
       </tr>
       
       <tr>
@@ -313,9 +313,9 @@
       <tr>
         <td class="strong"><a href="#07fc58a7bb5f51e3da7383fa8cac48b53153335c" class="src_link" title="spec/features/shelters/shelters_index_spec.rb">spec/features/shelters/shelters_index_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>77</td>
-        <td>37</td>
-        <td>37</td>
+        <td>95</td>
+        <td>45</td>
+        <td>45</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -796,8 +796,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="3">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="3">
+          <span class="hits">7</span>
           
           <code class="ruby">    @shelters = Shelter.all</code>
         </li>
@@ -1060,14 +1060,14 @@
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="47">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="47">
+          <span class="hits">2</span>
           
           <code class="ruby">    Shelter.destroy(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="48">
+          <span class="hits">2</span>
           
           <code class="ruby">    redirect_to &#39;/shelters&#39;</code>
         </li>
@@ -1303,7 +1303,7 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  has_many :pets</code>
+          <code class="ruby">  has_many :pets, dependent: :destroy</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
@@ -4009,8 +4009,8 @@
     <h3>spec/features/shelters/shelters_index_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>37</b> relevant lines. 
-      <span class="green"><b>37</b> lines covered</span> and
+      <b>45</b> relevant lines. 
+      <span class="green"><b>45</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4399,7 +4399,7 @@
         <li class="covered" data-hits="1" data-linenumber="64">
           <span class="hits">1</span>
           
-          <code class="ruby">      click_link &quot;Update&quot;</code>
+          <code class="ruby">      click_link &quot;Update Shelter&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
@@ -4475,6 +4475,114 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe &quot;shelters index page&quot;, type: :feature do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="80">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &quot;as a visitor&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;can delete a shelter&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="82">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      shelter1 = Shelter.create(name: &quot;Mike&#39;s Shelter&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby">                                address: &quot;1331 17th Street&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby">                                city: &quot;Denver&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">                                state: &quot;CO&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
+          
+          
+          <code class="ruby">                                zip: &quot;80202&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="87">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="88">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit &quot;/shelters&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="89">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      click_link &quot;Delete Shelter&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="91">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(current_path).to eq(&quot;/shelters&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="92">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_no_content(shelter1.name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="95">
           
           
           <code class="ruby">end</code>
