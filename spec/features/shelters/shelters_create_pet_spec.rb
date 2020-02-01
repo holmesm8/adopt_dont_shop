@@ -9,6 +9,15 @@ RSpec.describe "shelters index page", type: :feature do
                                 state: "CO",
                                 zip: "80202")
 
+      pet1 = Pet.create!(image: "https://cdn2-www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg",
+        name: "Athena",
+        description: "butthead",
+        age: "1",
+        sex: "female",
+        adoptable: "yes",
+        shelter_id: shelter1.id
+      )
+
       visit "/shelters/#{shelter1.id}/pets"
       click_link "Create Pet"
 
@@ -19,12 +28,14 @@ RSpec.describe "shelters index page", type: :feature do
       fill_in 'Description', with: 'curious'
       fill_in 'Age', with: '2'
       fill_in 'Sex', with: 'male'
+      fill_in 'Adoptable', with: 'yes'
 
       click_on 'Create Pet'
 
       expect(current_path).to eq("/shelters/#{shelter1.id}/pets")
+
+      expect(page).to have_css("img[src*='https://www.readersdigest.ca/wp-content/uploads/sites/14/2013/03/6-facts-to-know-before-owning-a-puppy.jpg']")
       expect(page).to have_content("Scruffy")
-      expect(page).to have_content("curious")
       expect(page).to have_content("2")
       expect(page).to have_content("male")
     end
