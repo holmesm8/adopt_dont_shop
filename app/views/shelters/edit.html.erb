@@ -1,5 +1,5 @@
 <h1>Edit Shelter</h1>
-ag
+
 <%=form_tag("/shelters/#{@shelter.id}", method: :patch) do %>
   <br><%= label_tag :name %>
   <br><%= text_field_tag :name, @shelter.name%>

@@ -7,7 +7,7 @@
 <% end %>
 
 <% @pets.each do |pet| %>
-  <p>Doggy Name: <%= pet.name %></p>
+  <p><a href="/pets/<%= pet.id %>"><%=pet.name%></a></p>
   <img src="<%= pet.image %>"<br>
   <p>Age: <%= pet.age %></p>
   <p>Sex: <%= pet.sex %></p>
