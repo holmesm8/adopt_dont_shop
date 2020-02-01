@@ -7,13 +7,16 @@
 <% end %>
 
 <% @pets.each do |pet| %>
-  <p><a href="/pets/<%= pet.id %>"><%=pet.name%></a></p>
-  <img src="<%= pet.image %>"<br>
-  <p>Age: <%= pet.age %></p>
-  <p>Sex: <%= pet.sex %></p>
-  <p>Shelter: <%= pet.shelter.name %></p>
-  <br>
-  <br>
+  <section class="grid-pet" id="pet-<%= pet.id %>">
+    <p><a href="/pets/<%= pet.id %>"><%=pet.name%></a></p>
+    <img src="<%= pet.image %>"<br>
+    <p>Age: <%= pet.age %></p>
+    <p>Sex: <%= pet.sex %></p>
+    <p>Shelter: <%= pet.shelter.name %></p>
+    <%= link_to 'Update Pet', "/pets/#{pet.id}/edit" %>
+    <br>
+    <br>
+  </section>
 <% end %>
 
 <% if @shelter %>
