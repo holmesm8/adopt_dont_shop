@@ -9,6 +9,7 @@ class PetsController < ApplicationController
   end
 
   def new
+    @shelter_id = params[:shelter_id]
   end
 
   def create
@@ -24,7 +25,7 @@ class PetsController < ApplicationController
 
     pet.save
 
-    redirect_to '/pets'
+    redirect_to "/shelters/#{pet.shelter_id}/pets"
   end
 
   def show

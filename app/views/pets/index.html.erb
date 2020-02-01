@@ -15,3 +15,7 @@
   <br>
   <br>
 <% end %>
+
+<% if @shelter %>
+<%= link_to 'Create Pet', "/shelters/#{@shelter.id}/pets/new" %>
+<% end %>
