@@ -50,3 +50,28 @@ RSpec.describe "shelters index page", type: :feature do
     end
   end
 end
+
+RSpec.describe "shelters index page", type: :feature do
+  context "as a visitor" do
+    it "can edit a shelter" do
+      shelter1 = Shelter.create(name: "Mike's Shelter",
+                                address: "1331 17th Street",
+                                city: "Denver",
+                                state: "CO",
+                                zip: "80202")
+
+      visit "/shelters"
+      click_link "Update"
+
+      expect(current_path).to eq("/shelters/#{shelter1.id}/edit")
+      expect(page).to have_content("Edit Shelter")
+
+      fill_in 'Name', with: 'Matts DoggyDayCare'
+
+      click_on "Save Changes"
+
+      expect(current_path).to eq("/shelters/#{shelter1.id}")
+      expect(page).to have_content("Matts DoggyDayCare")
+    end
+  end
+end
