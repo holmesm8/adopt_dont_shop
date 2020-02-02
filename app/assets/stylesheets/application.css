@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+ header {
+   margin:0 auto;
+   height: 100px;
+   width: 100px;
+ }
+
+ banner {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+ h2 {
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 40px;
+	font-family: 'Orienta', sans-serif;
+}
+h4 {
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	font-family: 'Josefin Sans', sans-serif;
+}
