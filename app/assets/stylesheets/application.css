@@ -26,6 +26,7 @@
     width: 100%;
 }
 
+
  h2 {
 	margin: 1em 0 0.5em 0;
 	color: #343434;
@@ -33,6 +34,15 @@
 	font-size: 30px;
 	line-height: 40px;
 	font-family: 'Orienta', sans-serif;
+}
+
+h3 {
+ margin: 1em 0 0.5em 0;
+ color: #343434;
+ font-weight: normal;
+ font-size: 20px;
+ line-height: 40px;
+ font-family: 'Orienta', sans-serif;
 }
 
 h4 {
@@ -54,4 +64,11 @@ p {
   margin: 0 0 24px;
   text-align: justify;
   text-justify: inter-word;
+}
+
+form label {
+  color: #685206;
+  font-family:'Helvetica Neue',
+  sans-serif;
+  font-size: 14px;
 }
