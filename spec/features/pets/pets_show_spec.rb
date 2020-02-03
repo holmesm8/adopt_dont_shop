@@ -19,7 +19,7 @@ RSpec.describe "pets show page", type: :feature do
                         name: "Athena",
                         description: "butthead",
                         age: "1",
-                        sex: "female",
+                        sex: "f",
                         adoptable: "yes",
                         shelter_id: shelter1.id
                         )
@@ -28,7 +28,7 @@ RSpec.describe "pets show page", type: :feature do
                         name: "Odell",
                         description: "good dog",
                         age: "4",
-                        sex: "male",
+                        sex: "m",
                         adoptable: "yes",
                         shelter_id: shelter2.id
                         )

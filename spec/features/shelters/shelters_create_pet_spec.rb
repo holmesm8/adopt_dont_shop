@@ -13,7 +13,7 @@ RSpec.describe "shelters index page", type: :feature do
         name: "Athena",
         description: "butthead",
         age: "1",
-        sex: "female",
+        sex: "f",
         adoptable: "yes",
         shelter_id: shelter1.id
       )
@@ -27,7 +27,7 @@ RSpec.describe "shelters index page", type: :feature do
       fill_in 'Name', with: 'Scruffy'
       fill_in 'Description', with: 'curious'
       fill_in 'Age', with: '2'
-      fill_in 'Sex', with: 'male'
+      fill_in 'Sex', with: 'm'
       fill_in 'Adoptable', with: 'yes'
 
       click_on 'Create Pet'
@@ -37,7 +37,7 @@ RSpec.describe "shelters index page", type: :feature do
       expect(page).to have_css("img[src*='https://www.readersdigest.ca/wp-content/uploads/sites/14/2013/03/6-facts-to-know-before-owning-a-puppy.jpg']")
       expect(page).to have_content("Scruffy")
       expect(page).to have_content("2")
-      expect(page).to have_content("male")
+      expect(page).to have_content("m")
     end
   end
 end

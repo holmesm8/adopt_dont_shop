@@ -7,7 +7,7 @@ pet1 = Pet.create(image: "https://cdn2-www.dogtime.com/assets/uploads/2011/03/pu
                   name: "Athena",
                   description: "butthead",
                   age: "1",
-                  sex: "female",
+                  sex: "f",
                   adoptable: "yes",
                   shelter_id: shelter1.id
                   )
@@ -15,7 +15,7 @@ pet2 = Pet.create(image: "https://s.abcnews.com/images/Lifestyle/puppy-ht-3-er-1
                   name: "Odell",
                   description: "good dog",
                   age: "4",
-                  sex: "male",
+                  sex: "m",
                   adoptable: "yes",
                   shelter_id: shelter2.id
                   )

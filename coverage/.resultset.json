@@ -810,7 +810,7 @@
         1,
         null
       ],
-      "/Users/mattholmes/turing/2module/projects/adopt_dont_shop/spec/models/pet_spec.rb": [
+      "/Users/mattholmes/turing/2module/projects/adopt_dont_shop/spec/models/pets_spec.rb": [
         1,
         null,
         1,
@@ -839,7 +839,7 @@
         1,
         null
       ],
-      "/Users/mattholmes/turing/2module/projects/adopt_dont_shop/spec/models/shelter_spec.rb": [
+      "/Users/mattholmes/turing/2module/projects/adopt_dont_shop/spec/models/shelters_spec.rb": [
         1,
         null,
         1,
@@ -975,6 +975,6 @@
         null
       ]
     },
-    "timestamp": 1580682619
+    "timestamp": 1580699425
   }
 }
